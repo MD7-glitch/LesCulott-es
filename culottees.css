@@ -11,19 +11,16 @@ body {
     box-sizing: border-box;
 }
 
-
-.banner img {
-    
+banner img {
+    background-image: url('https://cdn.glitch.global/55eaeabc-0fdc-43f8-90a2-77c618b890da/Culotteesimage?v=1732723671564'); /* Remplacez par le chemin de votre image */
     width: 100%; /* Prend toute la largeur */
     height: 100%; /* Prend toute la hauteur */
     object-fit: cover; /* Recadre l'image proprement */
 }
 
 
-
-header {
-    background-image: url('https://cdn.glitch.global/55eaeabc-0fdc-43f8-90a2-77c618b890da/Culotteesimage?v=1732723671564'); /* Remplacez par le chemin de votre image */
-    height: 50vh;                     /* Ajuster la hauteur de l'en-tête */
+banner {
+    height: 400px;                     /* Ajuster la hauteur de l'en-tête */
     display: flex;                    /* Flexbox pour centrer le contenu */
     justify-content: center;          /* Centre horizontalement */
     align-items: center;              /* Centre verticalement */
