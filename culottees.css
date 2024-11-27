@@ -10,22 +10,14 @@ body {
     font-family: 'Arial', sans-serif;
     box-sizing: border-box;
 }
-banner-wrapper {
-    border: 5px solid #FF69B4; /* Bordure colorée distinctive */
-    margin: 20px auto; /* Espace autour de la bannière */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Effet d'ombre pour démarquer la bannière */
-    max-width: 1200px; /* Largeur maximale pour s'adapter aux écrans larges */
-    border-radius: 10px; /* Coins légèrement arrondis */
-    overflow: hidden; /* Assure que tout le contenu reste à l'intérieur des bordures */
-}
-
-/* Bannière contenant l'image et la newsletter */
 banner {
     position: relative;
     width: 100%;
-    height: 400px; /* Hauteur de la bannière */
-    overflow: hidden; /* Empêche le débordement de l'image */
-    background-color: #f7f7f7; /* Couleur de fond si l'image ne charge pas */
+    height: 100vh; /* Hauteur de la bannière = hauteur de la fenêtre */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Image de la bannière */
@@ -35,10 +27,25 @@ banner-image {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Remplit l'espace sans déformation */
-    z-index: 1;
+    object-fit: cover; /* S'assure que l'image remplit toute la bannière sans déformation */
+    z-index: -1; /* Place l'image en arrière-plan */
 }
 
+/* Texte de la bannière */
+banner-text {
+    position: relative;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent derrière le texte */
+    border-radius: 10px;
+}
+
+banner-text h1 {
+    font-size: 3rem;
+    margin: 0;
+}
 
 /* Overlay pour le texte avec fond opaque */
 .overlay {
@@ -55,7 +62,6 @@ banner-image {
     font-size: 2em;
     font-weight: bold;
 }
-
 
 
 .navbar2 {
