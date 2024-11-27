@@ -9,10 +9,11 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     box-sizing: border-box;
+  background color : #6A1B9A; 
 }
 banner {
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100vh; /* Hauteur de la bannière = hauteur de la fenêtre */
     overflow: hidden;
     display: flex;
@@ -25,8 +26,8 @@ banner-image {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
     object-fit: cover; /* S'assure que l'image remplit toute la bannière sans déformation */
     z-index: -1; /* Place l'image en arrière-plan */
 }
@@ -47,24 +48,10 @@ banner-text h1 {
     margin: 0;
 }
 
-/* Overlay pour le texte avec fond opaque */
-.overlay {
-    background-color: rgba(255, 255, 255, 0.7); /* Couleur de fond opaque */
-    padding: 20px;                              /* Espace intérieur */
-    border-radius: 8px;                         /* Coins arrondis */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour effet visuel */
-    text-align: center;
-}
-
-.overlay h1 {
-    margin: 0;
-    color: #333; /* Couleur du texte */
-    font-size: 2em;
-    font-weight: bold;
-}
 
 
 .navbar2 {
+    width: 100%;    
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -96,84 +83,6 @@ banner-text h1 {
     font-weight: bold;         /* Texte en gras */
   }
 
-.newsletter-container {
-    background-color: rgba(0, 0, 0, 0.7); /* Couleur de fond noire avec opacité */
-    color: #fff; /* Couleur du texte en blanc */
-    padding: 20px; /* Espacement interne */
-    border-radius: 10px; /* Coins arrondis, si souhaité */
-    width: 300px; /* Largeur du carré */
-    margin: 0 auto; /* Centrer sur la page */
-    text-align: center; /* Centrer le contenu */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Effet d'ombre */
-    top: 50%; /* Centrer verticalement */
-    left: 50%; /* Centrer horizontalement */
-    transform: translate(-50%, -50%); /* Ajustement pour centrer réellement */
-    z-index: 10;
-}
-
-.newsletter-container h2 {
-    font-size: 24px; /* Taille du texte */
-    color: #0d070e;  /* Couleur sombre */
-    margin-bottom: 10px;
-}
-
-.newsletter-container .info-text {
-    font-size: 16px;
-    color: #7e1aa5;  /* Couleur légèrement grise */
-    margin-bottom: 20px;
-    align-items: center; 
-}
-
-.newsletter-form {
-    display: flex;
-    flex-direction: column;   /* Aligne les éléments verticalement */
-    align-items: center;      /* Centre les éléments horizontalement */
-}
-
-.newsletter-form input[type="email"] {
-    width: 80%;              /* Champ occupe toute la largeur disponible */
-    max-width: 300px;        /* Limite maximale pour petits écrans */
-    padding: 8px;            /* Espacement interne */
-    margin-bottom: 10px;      /* Espace entre les champs */
-    border: 1px solid #ccc;   /* Bordure grise claire */
-    border-radius: 5px;       /* Coins arrondis */
-    font-size: 16px;
-}
-
-
-.newsletter-form .checkbox-container {
-    display: flex;
-    align-items: center;      /* Aligne la case à cocher et le texte */
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: #a71b9d;
-}
-
-.newsletter-form button {
-    background-color: #f133ee; /* Couleur de fond rose vif */
-    color: rgb(15, 1, 1);      /* Couleur de texte sombre */
-    width: auto;             /* Ajuste la largeur au contenu */
-    padding: 8px 16px;       /* Réduit l'espacement interne */
-    font-size: 14px;   
-    border: none;              /* Pas de bordure */
-    border-radius: 5px;        /* Coins arrondis */
-    cursor: pointer;           /* Curseur pointer au survol */
-    font-size: 16px;
-    transition: background-color 0.3s; /* Transition pour le survol */
-}
-
-.newsletter-form button:hover {
-    background-color: #da5edc; /* Couleur différente au survol */
-}
-
-
-h1 {
-    text-align: center;
-    color: #edeaef;
-}
-body{
-    background-color: #ee8ef0;
-}
 
 #navbar {
     background-color: white;  /* Fond blanc */
