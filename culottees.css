@@ -33,8 +33,9 @@ header {
     background-size: cover; /* Assure que l'image couvre tout l'espace */
     background-position: center; /* Centre l'image dans la bannière */
     background-repeat: no-repeat; /* Évite les répétitions */
+  
 }
-}
+
 
 /* Overlay pour le texte avec fond opaque */
 .overlay {
@@ -95,6 +96,10 @@ header {
     margin: 0 auto; /* Centrer sur la page */
     text-align: center; /* Centrer le contenu */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Effet d'ombre */
+    top: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, -50%); /* Ajustement pour centrer réellement */
+    z-index: 10;
 }
 
 .newsletter-container h2 {
