@@ -1,72 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+<html lang="fr">
+<head>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="culottees.css">
+<script src="culottees.js"></script>
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Association féministe pour la promotion des droits des femmes et de l'égalité des genres.">
+    <title>Les Culottées</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<br>
+<body>
 
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
-      </div>
+    <div id="welcome-cache">
+        <h1>Les Culottées</h1>
+        <button id="enter-site">Entrer</button>
     </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
+
+    <div id="main-content" style="display: none;">
+        <p>Contenu principal du site</p>
+    </div>
+
+    <script src="culottees.js"></script>
+    <br>
+
+<!-- Supprimer cette ligne -->
+<header>
+    <h2>Les Culottées</h2>
+    <img src="https://th.bing.com/th/id/OIP.8Dg7QuDM8pOwQ0j_CK2vtQHaEK?rs=1&pid=ImgDetMain" alt="Les Culottées">
+</header>
+<!-- Supprimer cette ligne -->
+
+
+<!-- Barre d'inscription à la newsletter -->
+<div class="newsletter-container">
+    <h2>Inscrivez-vous à notre newsletter</h2>
+    <p class="info-text">C'est gratuit et utile !</p>
+    
+    <form action="/submit-newsletter" method="POST" class="newsletter-form">
+        <input type="email" name="email" placeholder="Entrez votre email" required>
+        
+        <!-- Case à cocher pour accepter les conditions -->
+        <div class="checkbox-container">
+            <input type="checkbox" id="accept-data" name="accept-data" required>
+            <label for="accept-data">J'accepte de partager mes données.</label>
+        </div>
+        
+        <!-- Bouton d'inscription -->
+        <button type="submit">S'inscrire</button>
+    </form>
+</div>
+
+
+<nav class="navbar" id="navbar">
+    <ul class="menu">
+        <!-- Correction de la fermeture de <li> et de l'attribut href -->
+        <a href="#">Nous contacter</a>
+        <li>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&mailto=margauxdelafosse94@gmail.com?subject=Demande%20d'information&body=Bonjour%20nous%20souhaitons%20en%20savoir%20plus%20sur...">Contact</a>
+        </li>
+    </ul>
+</nav>
+
+
+<table>
+<nav class="navbar2" id="navbar2">
+    <a href="qui sommes nous/Quisommesnous.html">À propos</a>
+<!-- Contenu de la page -->
+    <a href="Adhesion/news.html">Adhésion</a>
+    <a href="Soutient/Nousoutenir.html">Nous soutenir</a>
+</nav>
+</table>
+
+<div class="container">
+    <section class="intro" id="intro">
+        <h1>Bienvenue sur les Culottés</h1>
+        <p>Une association qui lutte pour l'égalité des genres et promeut le travail des celles qui oeuvrent tous les jours pour nos droits !</p>
+    </section>
+
+    <section class="section" id="news">
+    <div>
+        <ul class="menu">
+            <!-- Lien "Actualités" qui redirige vers une autre page -->
+            <li class="dropdown">
+                <h2><a href="Actu">Actualités France</a></h2>
+             <!-- Menu déroulant caché par défaut, visible au survol -->
+                <div class="dropdown-content">
+                    <a href="Actu/ActuFr/actufr.html">Actualités France</a>
+                    <a href="Actu/Actuinter/Actuinter.html">Actualités Internationale</a>
+                </div>
+            </li>
+        </ul>
+        <p>Découvrez les dernières nouvelles concernant les droits des femmes dans le monde.</p>
+    </div>
+</section>
+    
+<section class="section" id="Voix à suivre">
+        <div>
+            <h2><a href="Voix à suivre/Voices.html"> Les Femmes à suivre </a></h2>
+    <p> Ici un petit guide, non exhaustif, des voix fémnines à suivre aujourd'hui.</p> 
+        </div>
+    </section>
+
+    
+ <section class="section" id="Nos recommandations">
+    <div>
+        <h2> <a href="Nos recommandations/Nosreco.html"> Nos recommandations</a></h2>
+         <p>Retrouvez Les recommandations de l'association pour mieux comprendre les enjeux du féminisme</p>
+        </div>
+    </section>
+        
+
+    <section class="section" id="events">
+        <div>
+            <h2>Événements</h2>
+            <p>Venez participer à nos ateliers, conférences et manifestations.</p>
+        </div>
+    </section>
+
+    
+    <a href="main féminisme discours/discours Veil.html">
+        <img src="femmes mannifestation.jpeg" 
+             alt="Féminisme et avortement" 
+             class="interactive-image">
+    </a>
+    <div class="tooltip"> 
+        <!-- Texte ou éléments de la tooltip ici -->
+    </div>
+
+
+
+
+
+
+
+<footer>
+    <p>&copy; 2024 Association Féministe - Tous droits réservés</p>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+        </ul>
+    </nav>
+</footer>
+
+<!-- Barre de navigation pour l'article (si tu veux ajouter plus de pages ou de sections) -->
+    <div class="article-navigation">
+        <button class="prev">Précédent</button>
+        <button class="next">Suivant</button>
+    </div>
+</div>
+
+<script src="culottees.js"></script>
+
+    
+    <footer>
+        <p><a href="#" id="mentions-link">Mentions légales</a></p>
     </footer>
-  </body>
+    
+    <div id="modalMentions" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Mentions Légales</h2>
+            <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique , il est précisé aux utilisateurs du site Les Culottées l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
+            <h2>Édition du site</h2>
+            <p>Le présent site, accessible à l’URL <a href="http://www.LesCulottées.fr" target="_blank">www.LesCulottées.fr</a> (le « Site »), est édité par :</p>
+            <p><strong>Association :</strong> Les Culottées, enregistrée auprès de la préfecture/sous-préfecture de 75 - Préfecture Paris sous le numéro W123456789.</p>
+            <p><strong>Siège social :</strong> 12 rue Tolbiac 75013 Paris.</p>
+            <p><strong>Représentée par :</strong> Margaux Delafosse, dûment habilitée.</p>
+            
+            <h2>Hébergement</h2>
+            <p>Le Site est hébergé par la société <strong>Wix</strong>, situé à :</p>
+            <p>1 Grant’s Row, Dublin 2, D02HX96, Ireland.</p>
+            <p><strong>Contact :</strong> (+1) 415 358 0857</p>
+            
+            <h2>Directeur de publication</h2>
+            <p>Le Directeur de la publication du Site est [À COMPLETER].</p>
+            
+            <h2>Nous contacter</h2>
+            <p><strong>Par téléphone :</strong> +33680705371</p>
+            <p><strong>Par email :</strong> <a href="mailto:LesCulottées@gmail.com">LesCulottées@gmail.com</a></p>
+            <p><strong>Par courrier :</strong> 12 rue de Tolbiac 75013 PARIS</p>
+            
+            <h2>Données personnelles</h2>
+            <p>Le traitement de vos données à caractère personnel est régi par notre <a href="#privacy-policy">Charte du respect de la vie privée</a>, disponible depuis la section "Charte de Protection des Données Personnelles", conformément au Règlement Général sur la Protection des Données 2016/679 du 27 avril 2016 (« RGPD »).</p>
+            
+            <p><em>Génération des mentions légales par Legalstart.fr.</em></p>
+            
+        </div>
+    </div>
+    
+    <script>
+  
+    const modal = document.getElementById("modalMentions");
+    const openModal = document.getElementById("mentions-link");
+    const closeModal = document.getElementById("closeModal");
+
+
+    openModal.onclick = function(event) {
+        event.preventDefault();
+        modal.style.display = "block";
+    }
+
+   
+    closeModal.onclick = function() {
+        modal.style.display = "none";
+    }
+
+
+    window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+------Cookie-----
+<div class="cookie-banner" id="cookieBanner">
+    <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. En continuant à naviguer, vous acceptez notre <a href="/politique-de-confidentialite" target="_blank">politique de confidentialité</a>.</p>
+    <button id="acceptCookies">Accepter</button>
+    <button id="declineCookies">Refuser</button>
+</div>
+
+
+
+</body>
 </html>
