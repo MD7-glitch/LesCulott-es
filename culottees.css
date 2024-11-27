@@ -27,7 +27,7 @@ banner-image {
     top: 0;
     left: 0;
     width: 80%;
-    height: 80%;
+    height: %;
     object-fit: cover; /* S'assure que l'image remplit toute la bannière sans déformation */
     z-index: -1; /* Place l'image en arrière-plan */
 }
