@@ -13,9 +13,11 @@ body {
 
 
 
-/* Style de l'en-tête */
+
 header {
+  <!-- Supprimer cette ligne -->
     background-image: url('https://th.bing.com/th/id/OIP.8Dg7QuDM8pOwQ0j_CK2vtQHaEK?rs=1&pid=ImgDetMain');  
+<!-- Supprimer cette ligne -->
     background-size: cover;           /* Pour que l'image couvre toute la largeur */
     background-position: center;      /* Centrer l'image */
     background-repeat: no-repeat;     /* Pas de répétition de l'image */
