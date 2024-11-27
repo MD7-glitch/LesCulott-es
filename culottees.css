@@ -10,27 +10,33 @@ body {
     font-family: 'Arial', sans-serif;
     box-sizing: border-box;
 }
-
-banner img {
-    background-image: url('https://cdn.glitch.global/55eaeabc-0fdc-43f8-90a2-77c618b890da/Culotteesimage?v=1732723671564'); /* Remplacez par le chemin de votre image */
-    width: 100%; /* Prend toute la largeur */
-    height: 100%; /* Prend toute la hauteur */
-    object-fit: cover; /* Recadre l'image proprement */
+banner-wrapper {
+    border: 5px solid #FF69B4; /* Bordure colorée distinctive */
+    margin: 20px auto; /* Espace autour de la bannière */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Effet d'ombre pour démarquer la bannière */
+    max-width: 1200px; /* Largeur maximale pour s'adapter aux écrans larges */
+    border-radius: 10px; /* Coins légèrement arrondis */
+    overflow: hidden; /* Assure que tout le contenu reste à l'intérieur des bordures */
 }
 
-
+/* Bannière contenant l'image et la newsletter */
 banner {
-    height: 400px;                     /* Ajuster la hauteur de l'en-tête */
-    display: flex;                    /* Flexbox pour centrer le contenu */
-    justify-content: center;          /* Centre horizontalement */
-    align-items: center;              /* Centre verticalement */
     position: relative;
-  width: 100%; /* Prend toute la largeur */
-    height: 100vh; /* Prend toute la hauteur de l'écran */
-    background-size: cover; /* Assure que l'image couvre tout l'espace */
-    background-position: center; /* Centre l'image dans la bannière */
-    background-repeat: no-repeat; /* Évite les répétitions */
-  
+    width: 100%;
+    height: 400px; /* Hauteur de la bannière */
+    overflow: hidden; /* Empêche le débordement de l'image */
+    background-color: #f7f7f7; /* Couleur de fond si l'image ne charge pas */
+}
+
+/* Image de la bannière */
+banner-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Remplit l'espace sans déformation */
+    z-index: 1;
 }
 
 
