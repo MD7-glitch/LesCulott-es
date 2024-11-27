@@ -12,20 +12,28 @@ body {
 }
 
 
+.banner img {
+    
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    object-fit: cover; /* Recadre l'image proprement */
+}
+
 
 
 header {
-  <!-- Supprimer cette ligne -->
-    background-image: url('https://cdn.glitch.global/55eaeabc-0fdc-43f8-90a2-77c618b890da/Culotteesimage?v=1732723671564');  
-<!-- Supprimer cette ligne -->
-    background-size: cover;           /* Pour que l'image couvre toute la largeur */
-    background-position: center;      /* Centrer l'image */
-    background-repeat: no-repeat;     /* Pas de répétition de l'image */
+    background-image: url('https://cdn.glitch.global/55eaeabc-0fdc-43f8-90a2-77c618b890da/Culotteesimage?v=1732723671564'); /* Remplacez par le chemin de votre image */
     height: 50vh;                     /* Ajuster la hauteur de l'en-tête */
     display: flex;                    /* Flexbox pour centrer le contenu */
     justify-content: center;          /* Centre horizontalement */
     align-items: center;              /* Centre verticalement */
     position: relative;
+  width: 100%; /* Prend toute la largeur */
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    background-size: cover; /* Assure que l'image couvre tout l'espace */
+    background-position: center; /* Centre l'image dans la bannière */
+    background-repeat: no-repeat; /* Évite les répétitions */
+}
 }
 
 /* Overlay pour le texte avec fond opaque */
