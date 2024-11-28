@@ -22,16 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-document.querySelector('.prev').addEventListener('click', function() {
-    alert('');
-    // Ajoute ici le code pour naviguer vers la page précédente
-});
-
-document.querySelector('.next').addEventListener('click', function() {
-    alert('');
-    // Ajoute ici le code pour naviguer vers la page suivante
-});
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const cookieBanner = document.getElementById("cookieBanner");
