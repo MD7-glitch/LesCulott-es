@@ -19,6 +19,7 @@ banner {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 /* Image de la bannière */
@@ -32,20 +33,9 @@ banner-image {
     z-index: -1; /* Place l'image en arrière-plan */
 }
 
-/* Texte de la bannière */
-banner-text {
-    position: relative;
-    color: white;
-    text-align: center;
-    z-index: 1;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Fond semi-transparent derrière le texte */
-    border-radius: 10px;
-}
-
-banner-text h1 {
-    font-size: 3rem;
-    margin: 0;
+h1 {
+  position : center
+  
 }
 
 
