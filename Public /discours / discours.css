@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdf1f0; /* Couleur pastel douce */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff4081; /* Couleur rose vif */
+}
+
+.video-container {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff4081, #ffcc00, #4caf50, #2196f3);
+    background-size: 300% 300%; /* Animation de dégradé */
+    animation: gradientAnimation 5s infinite;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    display: block;
+    border: none;
+    border-radius: 15px;
+    width: 560px;
+    height: 315px;
+}
+
+/* Animation de dégradé */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #555;
+}
